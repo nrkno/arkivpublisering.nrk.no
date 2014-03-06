@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+        For demonstration purposes, the `title` is dynamically set here based on
+        your `sails.config.appName` to show that you can inject data into layouts
+        exactly the same way as with your other view templates.
+    -->
+    <title><%- title %></title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!--
+
+      Stylesheets
+      ========================
+
+      You can link any CSS, LESS, or image files in your `assets` directory
+      as you would normally: using <link/> tags.
+      
+    -->
+<!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+
+
+    <!--
+
+      Support for LESS included by default
+      ================================================
+
+      LESS files are automatically compiled when they change using the Gruntfile
+      located in the top-level of this Sails app.  If you run into issues with styles
+      not reloading, check the Sails log output in your console for LESS compilation errors.
+      If necessary, shut down and then lift your app again.
+      
+    -->
+    <style>
+      body {
+        padding-top: 50px;
+      }
+     
+      .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: #000000;
+      }
+      .navbar-inverse {
+        background-color: #000;
+        border-color: #000000;
+        background-image: none;
+      }
+
+      a.navbar-brand {
+        
+      }
+    
+    </style>
+    <!-- <script type="text/javascript" src="/js/socket.io.js"></script>  -->
+    <!-- then beef it up with some convenience logic for talking to Sails.js -->
+    <!--<script type="text/javascript" src="/js/sails.io.js"></script>  -->
+    <!-- listen on socket.io for incoming messages -->
+    <!--<script type="text/javascript" src="/js/app.js"></script>   -->
+
+
+    
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/underscore-min.js"></script>
+    <script type="text/javascript" src="/js/ejs_production.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-3413696-49', 'nrk.no');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Åpne</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="http://fil.nrk.no/contentfile/web/globalnavigation/nrklogo-white.png"></a>
+        </div>
+        <div id="navbarlist" class="collapse navbar-collapse">
+            <%- partial('../assets/templates/navbar') %>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+   
+        <!-- Include the view file for the current controller/route -->
+        <%- body %>
+    
+
+    </div><!-- /.container -->
+
+
+
+
+    <!--
+
+      Client-side Javascript
+      ========================
+
+      You can import any js files in your `assets` directory as you would 
+      normally: using <script></script> tags.
+
+      Here's an example of importing a few dependencies, in order:
+    -->
+    <!-- Bring in the socket.io client -->
+
+
+
+   
+    <!-- Your scripts here? -->
+    <!-- Your scripts here? -->
+    <!-- Your scripts here? -->
+
+
+    <!--
+
+      Looking for client-side CoffeeScript or TypeScript?
+      ================================================
+
+      CoffeeScript and TypeScript precompilation are not installed by default,
+      but if you'd like to mix those features in, it is straightforward to
+      `npm install` the relevant grunt community modules and modify your Gruntfile
+      to use them.
+
+    -->
+
+
+
+    <!--
+
+      Another way: The Asset Linker
+      ========================
+
+      Sails supports a Grunt-based asset linker, to automatically inject 
+      <link> and <script> tags, as well any client-side templates you're using
+      into your HTML layouts and views, respecting dependencies.
+
+      You created this Sails app with the asset linker disabled.
+      If you change your mind, check out the docs on the subject:
+      http://sailsjs.org/#!documentation/asset-management
+
+    -->
+    </body>
+</html>

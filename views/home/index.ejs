@@ -1,0 +1,36 @@
+ <style>
+ .thumbnail-min-height{
+    min-height:320px;
+    border: none;
+ }
+ .thumbnail a>img {
+    margin-left:0px;
+ }
+ .thumbnail .caption {
+    padding-left:0px;
+ }
+ </style>
+ 
+ <script>
+    var id = '<%=period.id %>';
+    var tmpl = new EJS({url: 'templates/hometemplate.ejs'});
+    var options = {
+        url : '/archive/getContent/'+ id
+    };
+
+    $(document).ready(function(){
+       $.getJSON(options.url, function (response) {
+            tmpl.update('archive', response);
+        });
+    });
+ </script>
+
+
+ <div id="archive">
+    <div class="progress progress-striped active" style="margin-top:50px">
+      <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+        HENTER PUBLISERTE TITLER
+      </div>
+    </div>
+</div>
+

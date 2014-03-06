@@ -1,0 +1,8 @@
+  <ul class="nav navbar-nav">
+  	 <li> <a href="mailto:Forslag.arkivpublisering@nrk.no?Subject=Ønske%20til%20 arkiv" target="_top">Kontakt NRK</a>
+    <% if(allPeriods){ %>
+      <% _.each(allPeriods, function (eachPeriod) { %>
+          <li class="<%=eachPeriod.isCurrent  %>"> <a href="/<%=eachPeriod.id %>"><%=eachPeriod.title %></a> </li>
+      <% }) %>
+    <% } %>
+  </ul>
