@@ -12,7 +12,7 @@
  </style>
  
  <script>
-    var id = '<%=period.id %>';
+    var id = '<%=data.period.id %>';
     var tmpl = new EJS({url: 'templates/hometemplate.ejs'});
     var options = {
         url : '/archive/getContent/'+ id
@@ -25,12 +25,42 @@
     });
  </script>
 
-
- <div id="archive">
-    <div class="progress progress-striped active" style="margin-top:50px">
-      <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-        
-      </div>
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12" >
+        <ul class="nav nav-pills">
+            <% 
+                var fullList = data.allPeriods;
+                var slicedList = fullList;
+              
+                if(fullList.length > 5)
+                {
+                    slicedList = data.allPeriods.slice(0, 5);
+                }
+                
+                data.allPeriods = slicedList;
+            %>
+            <%- partial('../../assets/templates/navbar') %>
+           <% if(fullList.length > 5){ %>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Velg en annen periode.. <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <% data.allPeriods = fullList; %>
+                    <%- partial('../../assets/templates/navbar') %>
+                </ul>
+            </li>
+           <% } %>
+        </ul>
+    </div>
+</div>
+ <div id="archive" class="row" style="margin-top:50px">
+    <div class="col-xs-12 col-sm-12 col-md-12" >
+        <div class="progress progress-striped active">
+          <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+            
+          </div>
+        </div>
     </div>
 </div>
 

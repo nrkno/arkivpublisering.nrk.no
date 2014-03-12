@@ -10,7 +10,9 @@ module.exports = {
             return res.redirect('/1');
         }
     	archiveservice.getAllArchives(id, function(data){
-	     	return res.view(data);
+	     	return res.view({ 
+	     		title : data.period.title,
+	     		data : data });
     	});
    
     }
