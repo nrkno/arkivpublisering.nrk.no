@@ -6,7 +6,7 @@
         your `sails.config.appName` to show that you can inject data into layouts
         exactly the same way as with your other view templates.
     -->
-    <title><%- title %></title>
+    <title>Arkiv - <%- title %></title>
 
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -71,7 +71,9 @@
   
 
     <div class="container">
-
+    <div class="page-header">
+      <h1><small>ARKIV</small></h1>
+    </div>
    
         <!-- Include the view file for the current controller/route -->
         <%- body %>
