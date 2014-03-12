@@ -13,7 +13,8 @@ Applikasjonen er en node.js-applikasjon som henter data fra et konfigurerbart Go
 For å kjøre applikasjonen lokalt:
 
 1. Clone repository'et
-2. Call "sails lift"
+2. Installer sails via npm med : npm install -g sails
+3. Kjør "sails lift"
 
 Dette vil kjøre opp applikasjonen på port 1337 (takk, Sails.js).
 
