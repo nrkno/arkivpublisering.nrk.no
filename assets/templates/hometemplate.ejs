@@ -73,7 +73,7 @@
                             <% if(program.serieid){ %>
                                 <a href="http://tv.nrk.no/serie/<%= program.serieid %>"><%= program.title %></a>
                             <% }else if(program.programid) { %>
-                                <a href="http://tv.nrk.no/sok?q=<%= program.title %>"><%= program.title %></a>
+                                <a href="http://tv.nrk.no/program/<%= program.programid %>"><%= program.title %></a>
                             <% }else { %>
                                 <a href="http://tv.nrk.no/sok?q=<%= program.title %>"><%= program.title %></a>
                             <% } %>
