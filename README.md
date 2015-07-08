@@ -18,3 +18,4 @@ For å kjøre applikasjonen lokalt:
 
 Dette vil kjøre opp applikasjonen på port 1337 (takk, Sails.js).
 
+
