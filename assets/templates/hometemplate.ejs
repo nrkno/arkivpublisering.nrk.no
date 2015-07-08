@@ -11,29 +11,29 @@
                         <div class="thumbnail thumbnail-min-height">
                             <% if(program.imageurl){ %>
                                 <% if(program.serieid){ %>
-                                    <a href="http://tv.nrk.no/serie/<%= program.serieid %>">
+                                    <a href="https://tv.nrk.no/serie/<%= program.serieid %>">
                                         <img alt="<%program.title %>"src="<%=program.imageurl %>" >
                                     </a>   
                                 <% }else if(program.programid) { %>
-                                    <a href="http://tv.nrk.no/program/<%= program.programid %>">
+                                    <a href="https://tv.nrk.no/program/<%= program.programid %>">
                                         <img alt="<%program.title %>"src="<%=program.imageurl %>" >
                                     </a>   
                                 <% }else { %>
-                                    <a href="http://tv.nrk.no/sok?q=<%= program.title %>">
+                                    <a href="https://tv.nrk.no/sok?q=<%= program.title %>">
                                         <img alt="Mangler serieid" src="http://gfx.nrk.no/urxQMSXF-WnbfjBH5ke2igumndBjS5ZC6Z6FOsEAclhA">
                                         </a>
                                 <% } %>
                
                             <% }else { %>
-                                <a href="http://tv.nrk.no/sok?q=<%= program.title %>">
+                                <a href="https://tv.nrk.no/sok?q=<%= program.title %>">
                                     <img alt="Mangler kobling til program/serie" src="http://gfx.nrk.no/urxQMSXF-WnbfjBH5ke2igumndBjS5ZC6Z6FOsEAclhA">
                                 </a>
                             <% } %>
                           <div class="caption">
                             <% if(program.serieid){ %>
-                                <h4 class="media-heading"><a href="http://tv.nrk.no/serie/<%= program.serieid %>"><%= program.title %></a></h4>
+                                <h4 class="media-heading"><a href="https://tv.nrk.no/serie/<%= program.serieid %>"><%= program.title %></a></h4>
                             <% } else if(program.programid){ %>
-                                <h4 class="media-heading"><a href="http://tv.nrk.no/program/<%= program.programid %>"><%= program.title %></a></h4>
+                                <h4 class="media-heading"><a href="https://tv.nrk.no/program/<%= program.programid %>"><%= program.title %></a></h4>
                             <% }else { %>
                                 <h4 class="media-heading"><%= program.title %></h4>
                             <% } %>
@@ -57,11 +57,11 @@
                         <div class="col-sm-12 col-md-12">
 
                             <% if(program.serieid){ %>
-                                <a href="http://tv.nrk.no/serie/<%= program.serieid %>"><%= program.title %></a>
+                                <a href="https://tv.nrk.no/serie/<%= program.serieid %>"><%= program.title %></a>
                             <% }else if(program.programid) { %>
-                                <a href="http://tv.nrk.no/program/<%= program.programid %>"><%= program.title %></a>
+                                <a href="https://tv.nrk.no/program/<%= program.programid %>"><%= program.title %></a>
                             <% }else { %>
-                                <a href="http://tv.nrk.no/sok?q=<%= program.title %>"><%= program.title %></a>
+                                <a href="https://tv.nrk.no/sok?q=<%= program.title %>"><%= program.title %></a>
                             <% } %>
                         </div>
                 <% }) %>
@@ -71,11 +71,11 @@
            <% _.each(_.filter(archive, function(p) { return !p.ispromo; }), function (program, index) { %>
                     <div class="col-sm-12 col-md-12">
                             <% if(program.serieid){ %>
-                                <a href="http://tv.nrk.no/serie/<%= program.serieid %>"><%= program.title %></a>
+                                <a href="https://tv.nrk.no/serie/<%= program.serieid %>"><%= program.title %></a>
                             <% }else if(program.programid) { %>
-                                <a href="http://tv.nrk.no/program/<%= program.programid %>"><%= program.title %></a>
+                                <a href="https://tv.nrk.no/program/<%= program.programid %>"><%= program.title %></a>
                             <% }else { %>
-                                <a href="http://tv.nrk.no/sok?q=<%= program.title %>"><%= program.title %></a>
+                                <a href="https://tv.nrk.no/sok?q=<%= program.title %>"><%= program.title %></a>
                             <% } %>
                     </div>
             <% }) %>

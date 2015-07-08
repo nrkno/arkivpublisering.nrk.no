@@ -35,5 +35,5 @@ $(function() {
 		});
 	}
 
-	attachGoogleEventToElements("a[href^='http://tv.nrk.no']", "link", "tv.nrk.no");
+	attachGoogleEventToElements("a[href^='https://tv.nrk.no']", "link", "tv.nrk.no");
 });
