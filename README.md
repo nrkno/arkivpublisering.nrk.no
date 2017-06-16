@@ -18,4 +18,7 @@ For å kjøre applikasjonen lokalt:
 
 Dette vil kjøre opp applikasjonen på port 1337 (takk, Sails.js).
 
+## Deploy til Azure
 
+WebAppen i Azure har en staging slot som trigger deploy på commits til master.
+Efter deploy till [staging](http://arkivpublisering-staging.azurewebsites.net) trenger man å swappe manuellt i portalen.
