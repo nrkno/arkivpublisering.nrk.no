@@ -1,21 +1,32 @@
 {
-    "name": "nrkarchive",
-    "private": true,
-    "version": "0.0.0",
-    "description": "a Sails application",
-    "dependencies": {
-        "sails": "0.9.9",
-        "grunt": "0.4.1",
-        "sails-disk": "~0.9.0",
-        "ejs": "0.8.4",
-        "optimist": "0.3.4"
-    },
-    "scripts": {
-        "start": "node server.js",
-        "debug": "node debug server.js"
-    },
-    "main": "server.js",
-    "repository": "",
-    "author": "",
-    "license": ""
+  "name": "nrkarchive",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "dependencies": {
+    "sails": "0.9.9",
+    "grunt": "0.4.1",
+    "sails-disk": "~0.9.0",
+    "ejs": "0.8.4",
+    "optimist": "0.3.4"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "debug": "node debug server.js"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrkno/arkivpublisering.nrk.no.git"
+  },
+  "author": "John Korsnes",
+  "license": "MIT",
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/nrkno/arkivpublisering.nrk.no/issues"
+  },
+  "homepage": "http://arkivpublisering.nrk.no"
 }
