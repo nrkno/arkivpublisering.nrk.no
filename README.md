@@ -1,3 +1,6 @@
+# Arkivert 22.02.2018
+Denne tjenesten har ikke vært i bruk på over 6 mnd. og blir dermed arkivert.
+
 ## Om arkivpublisering.nrk.no
 
 Arkivpublisering.nrk.no er veldig enkel side med én enkel oppgave. Her vil NRKs Arkiv & Research-avdeling dele hvilke serier/episoder fra arkivet som har blitt digitalisert.
